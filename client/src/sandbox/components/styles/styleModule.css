@@ -1,0 +1,16 @@
+.red {
+  background-color: rgba(157, 45, 45, 0.227);
+}
+.blue {
+  background-color: rgb(40, 40, 125);
+  color: rgb(208, 208, 208);
+}
+
+.fontSize3Rem {
+  font-size: 3rem;
+}
+
+.green {
+  background-color: green;
+  color: darkgray;
+}
