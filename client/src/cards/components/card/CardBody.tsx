@@ -1,38 +1,34 @@
+import CardContent from "@mui/material/CardContent";
 import React from "react";
+import CardInterface from "../../interfaces/CardInterface";
 import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
-import Button from "@mui/material/Button";
-const CardBody = () => {
+import CardBodyRow from "./CardBodyRow";
+import Box from "@mui/material/Box";
+
+type Props = { card: CardInterface };
+
+const CardBody: React.FC<Props> = ({ card }) => {
+  const { title, subtitle, address, phone, bizNumber } = card;
+  const { city, houseNumber, street, country } = address;
   return (
-    <>
-      <Typography
-        variant="body2"
-        component="span"
-        sx={{ fontWeight: "bold" }}
-        color="brown"
-      >
-        One:
-        <Typography color="green" component="span" variant="body2">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ad
-          ea quasi cupiditate commodi ab delectus, dolor sint eveniet libero
-          rerum nostrum consectetur deserunt ratione. Excepturi optio similique
-          blanditiis culpa voluptatum nostrum distinctio dignissimos commodi
-          molestiae aliquam, dolore omnis iure iusto. Deserunt officia minima
-          doloribus itaque autem rerum id debitis aliquam corporis? Repellendus
-          officiis magni nostrum nisi quod in cum atque, sed nihil dolorem amet
-          aperiam itaque enim asperiores commodi possimus quas perspiciatis
-          repudiandae nam adipisci expedita nesciunt labore minima mollitia!
-          Explicabo, ipsa facilis quae alias incidunt quos veniam at.
-          Accusantium sequi delectus porro, culpa illo expedita quam
-          perspiciatis eius.
-          <Divider color="yellow" />
+    <CardContent>
+      <Box mt={1}>
+        <Typography gutterBottom variant="h6" component="div">
+          {title}
         </Typography>
-        <Button variant="contained" color="info">
-          asdds
-        </Button>
-      </Typography>
-    </>
+        <Typography gutterBottom variant="subtitle2" component="div">
+          {subtitle}
+        </Typography>
+        <Divider />
+        <CardBodyRow title="Phone" content={phone} />
+        <CardBodyRow
+          title="Address"
+          content={`${street} ${houseNumber} ${city} ${country}`}
+        />
+        <CardBodyRow title="Card Number" content={String(bizNumber)} />
+      </Box>
+    </CardContent>
   );
 };
 

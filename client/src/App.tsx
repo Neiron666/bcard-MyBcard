@@ -9,8 +9,10 @@ import Styles from "./sandbox/components/styles/Styles";
 import StyleModule from "./sandbox/components/styles/StyleModule";
 import StyleTest from "./sandbox/components/styles/StyleTest";
 import MuiTypography from "./sandbox/mui-sandbox/data-display/MuiTypography";
-import CardBody from "./cards/components/card/CardBody";
+// import CardBody from "./cards/components/card/CardBody";
 import Card from "./cards/components/card/Card";
+import Cards from "./cards/components/card/Cards";
+import CardsPage from "./cards/pages/CardsPage";
 
 // import Babel from "./sandbox/Introduction/Babel";
 
@@ -28,7 +30,9 @@ function App() {
       {/* <StyleTest />
       <MuiTypography />
       <CardBody /> */}
-      <Card />
+      {/* <Card /> */}
+      {/* <Cards /> */}
+      <CardsPage />
     </div>
   );
 }
