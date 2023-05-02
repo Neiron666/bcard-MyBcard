@@ -13,6 +13,9 @@ import MuiTypography from "./sandbox/mui-sandbox/data-display/MuiTypography";
 import Card from "./cards/components/card/Card";
 import Cards from "./cards/components/card/Cards";
 import CardsPage from "./cards/pages/CardsPage";
+import ErrorPage from "./pages/ErrorPage";
+import SetPost from "./sandbox/use-state/SetPosts";
+import UseState from "./sandbox/use-state/UseState";
 
 // import Babel from "./sandbox/Introduction/Babel";
 
@@ -32,7 +35,10 @@ function App() {
       <CardBody /> */}
       {/* <Card /> */}
       {/* <Cards /> */}
-      <CardsPage />
+      {/* <CardsPage /> */}
+      {/* <ErrorPage /> */}
+      <SetPost />
+      {/* <UseState /> */}
     </div>
   );
 }

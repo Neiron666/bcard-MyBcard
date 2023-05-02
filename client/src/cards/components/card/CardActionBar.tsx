@@ -22,13 +22,15 @@ const CardActionBar: React.FC<Props> = ({
   onCall,
   cardId,
 }) => {
+  const handleEditCard = () =>
+    console.log(`You moved to card:${cardId} edit component`);
   return (
     <Box display="flex" justifyContent="space-between">
       <Box>
         <IconButton aria-label="delete" onClick={() => onDelete(cardId)}>
           <DeleteIcon />
         </IconButton>
-        <IconButton aria-label="Create" onClick={() => onEdit(cardId)}>
+        <IconButton aria-label="edit card" onClick={handleEditCard}>
           <CreateIcon />
         </IconButton>
       </Box>
