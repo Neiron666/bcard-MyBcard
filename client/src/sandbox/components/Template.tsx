@@ -1,14 +1,14 @@
 import React from "react";
 import Babel from "../Introduction/Babel";
 
-const Tamplate = () => {
+const Template = () => {
   return (
     <div>
-      <h1>Tamplate</h1>
+      <h1>Template</h1>
       <p>pipi pipi!!!</p>
       <Babel />
     </div>
   );
 };
 
-export default Tamplate;
+export default Template;

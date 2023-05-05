@@ -6,6 +6,10 @@ import CardHead from "./CardHead";
 import CardInterface from "../../interfaces/CardInterface";
 import CardBody from "./CardBody";
 import CardActionBar from "./CardActionBar";
+import { CardActionArea } from "@mui/material";
+import { useNavigate } from "react-router-dom";
+import ROUTES from "../../../routes/routesModel";
+import { log } from "console";
 
 type Props = {
   card: CardInterface;
@@ -24,11 +28,15 @@ const Card: React.FC<Props> = ({
   onCall,
   cardId,
 }) => {
+  const navigate = useNavigate();
   return (
     <MuiCard sx={{ minWidth: 280 }}>
-      <CardHead image={card.image} />
-
-      <CardBody card={card} />
+      <CardActionArea
+        onClick={() => navigate(`${ROUTES.CARD_DETAILS}/${card._id}`)}
+      >
+        <CardHead image={card.image} />
+        <CardBody card={card} />
+      </CardActionArea>
 
       <CardActionBar
         cardId={cardId}
