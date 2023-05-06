@@ -5,7 +5,7 @@ const StyleModule = () => {
   return (
     <>
       <div className="red">StyleModule</div>
-      <p className="blue">sfsdf</p>
+      <p className="blue">paragraph</p>
       <hr />
       <article>
         <h1 className="blue">title</h1>

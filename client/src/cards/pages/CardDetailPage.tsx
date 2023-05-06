@@ -102,7 +102,6 @@ const CardDetailsPage = () => {
         onDelete={console.log}
         cardId={card[0]._id}
         onCall={console.log}
-        onEdit={console.log}
         onLike={console.log}
       />
     </Container>

@@ -1,13 +1,14 @@
+// rafce
 import React from "react";
-import Babel from "../Introduction/Babel";
+import Babel from "../introduction/Babel";
 
 const Template = () => {
   return (
-    <div>
+    <>
       <h1>Template</h1>
-      <p>pipi pipi!!!</p>
+      <p>piii ani lo maain!!!</p>
       <Babel />
-    </div>
+    </>
   );
 };
 

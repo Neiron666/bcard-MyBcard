@@ -15,19 +15,11 @@ type Props = {
   card: CardInterface;
   onDelete: (id: string) => void;
   onLike: (id: string) => void;
-  onEdit: (id: string) => void;
   onCall: (id: string) => void;
   cardId: string;
 };
 
-const Card: React.FC<Props> = ({
-  card,
-  onDelete,
-  onLike,
-  onEdit,
-  onCall,
-  cardId,
-}) => {
+const Card: React.FC<Props> = ({ card, onDelete, onLike, onCall, cardId }) => {
   const navigate = useNavigate();
   return (
     <MuiCard sx={{ minWidth: 280 }}>
@@ -42,7 +34,6 @@ const Card: React.FC<Props> = ({
         cardId={cardId}
         onDelete={onDelete}
         onLike={onLike}
-        onEdit={onEdit}
         onCall={onCall}
       />
     </MuiCard>

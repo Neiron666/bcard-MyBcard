@@ -1,5 +1,3 @@
-import { Box, Button } from "@mui/material";
-import { title } from "process";
 import { useState } from "react";
 
 const UseState = () => {
@@ -15,25 +13,37 @@ const UseState = () => {
   return (
     <div style={{ padding: 16, backgroundColor: "#999" }}>
       <p>{counter}</p>
+      <p>hallo</p>
+      {/* <button
+        style={{ padding: 2, margin: 1 }}
+        onClick={() => setCounter((counter = counter + 1))}>
+        +
+      </button> */}
+
+      {/* <button
+        style={{ padding: 2, margin: 1 }}
+        onClick={() => {
+          counter = counter + 1;
+          console.log(counter);
+        }}>
+        +
+      </button> */}
 
       <button
         style={{ padding: 2, margin: 1 }}
-        onClick={() => setCounter((prev) => prev + 1)}
-      >
+        onClick={() => setCounter(prev => prev + 1)}>
         +
       </button>
 
       <button
         style={{ padding: 2, margin: 1 }}
-        onClick={() => setCounter((prev) => prev - 1)}
-      >
+        onClick={() => setCounter(prev => prev - 1)}>
         -
       </button>
 
       <button
         style={{ padding: 2, margin: 1 }}
-        onClick={() => setCounter((prev) => prev * 2)}
-      >
+        onClick={() => setCounter(prev => prev * 2)}>
         multiple
       </button>
 

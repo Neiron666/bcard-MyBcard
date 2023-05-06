@@ -28,7 +28,6 @@ const Cards: React.FC<Props> = ({ cards }) => {
             card={card}
             onDelete={handleCardDelete}
             onLike={handleCardLike}
-            onEdit={handleCardEdit}
             onCall={handleCardCall}
             cardId={card._id}
           />

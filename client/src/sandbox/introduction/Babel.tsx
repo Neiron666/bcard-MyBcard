@@ -2,19 +2,10 @@ import React from "react";
 
 // const Babel = () => {
 //   return (
-//     <div>
+//     <>
 //       <div>in div</div>
 //       <p>in p</p>
-//     </div>
-//   );
-// };
-
-// const Babel = () => {
-//   return (
-//     <div>
-//       <div>in div</div>
-//       <p>in p</p>
-//     </div>
+//     </>
 //   );
 // };
 
