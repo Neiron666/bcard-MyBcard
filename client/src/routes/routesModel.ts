@@ -28,6 +28,14 @@ export const SANDBOX_ROUTES = {
   MUI_BUTTON: "mui-button",
   MUI_DIVIDER: "mui-divider",
   MUI_TYPOGRAPHY: "mui-typography",
+  LAYOUT: "layout",
+  MUI_BOX: "mui-box",
+  MUICONTAINER: "Mui-Container",
+  LIFECYCLEEXE: "lifecycleExe",
+  MUIGRID: "MuiGrid",
+  // CUSTOM:"custom",
+  // CUSTOM_COUNTER: "counter",
+  // CUSTOM_NAME: "name",
 };
 
 export default ROUTES;

@@ -26,6 +26,11 @@ import MuiButton from "../sandbox/mui-sandbox/data-display/MuiButton";
 import DataDisplay from "../sandbox/mui-sandbox/data-display/DataDisplay";
 import MuiDivider from "../sandbox/mui-sandbox/data-display/MuiDivider";
 import MuiTypography from "../sandbox/mui-sandbox/data-display/MuiTypography";
+import MuiBox from "../sandbox/mui-sandbox/layout/MuiBox";
+import Layout from "../sandbox/mui-sandbox/layout/Layout";
+import LifecycleExe from "../sandbox/life-sicle-hooks/LifecycleExe";
+import MuiContainer from "../sandbox/mui-sandbox/layout/MuiContainer";
+import MuiGrid from "../sandbox/mui-sandbox/layout/MuiGrid";
 //URL מסתכל על כתובת בשורת ה ROUTS
 const Router = () => {
   return (
@@ -43,6 +48,7 @@ const Router = () => {
       <Route path={ROUTES.LOGIN} element={<LoginPage />} />
       <Route path={ROUTES.SANDBOX} element={<SandboxMenu />}>
         <Route path={SANDBOX_ROUTES.ITERATIONS} element={<Loops />} />
+        <Route path={SANDBOX_ROUTES.LIFECYCLEEXE} element={<LifecycleExe />} />
         <Route path={SANDBOX_ROUTES.INTRODUCTION} element={<Babel />}></Route>
         <Route path={SANDBOX_ROUTES.MUI_SANDBOX} element={<MuiSandbox />}>
           <Route path={SANDBOX_ROUTES.DATA_DISPLAY} element={<DataDisplay />}>
@@ -51,6 +57,15 @@ const Router = () => {
             <Route
               path={SANDBOX_ROUTES.MUI_TYPOGRAPHY}
               element={<MuiTypography />}
+            />
+          </Route>
+
+          <Route path={SANDBOX_ROUTES.LAYOUT} element={<Layout />}>
+            <Route path={SANDBOX_ROUTES.MUI_BOX} element={<MuiBox />} />
+            <Route path={SANDBOX_ROUTES.MUIGRID} element={<MuiGrid />} />
+            <Route
+              path={SANDBOX_ROUTES.MUICONTAINER}
+              element={<MuiContainer />}
             />
           </Route>
         </Route>

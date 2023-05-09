@@ -25,6 +25,7 @@ const MuiSandbox = () => {
             to={SANDBOX_ROUTES.DATA_DISPLAY}
             color="black"
           />
+          <NavItem label="layout" to={SANDBOX_ROUTES.LAYOUT} color="black" />
           {/* <NavItem label="Divider" to="divider" sx={{ color: "black" }} /> */}
         </Toolbar>
       </AppBar>

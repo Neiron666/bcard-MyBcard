@@ -36,6 +36,11 @@ const SandboxMenu = () => {
             to={SANDBOX_ROUTES.MUI_SANDBOX}
             color="black"
           />
+          <NavItem
+            label="LifecycleExe"
+            to={SANDBOX_ROUTES.LIFECYCLEEXE}
+            color="black"
+          />
         </Toolbar>
       </AppBar>
 
