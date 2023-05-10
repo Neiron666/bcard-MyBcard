@@ -41,6 +41,11 @@ const SandboxMenu = () => {
             to={SANDBOX_ROUTES.LIFECYCLEEXE}
             color="black"
           />
+          <NavItem
+            label="Children-Training"
+            to={SANDBOX_ROUTES.CHILDRENTRAINING}
+            color="black"
+          />
         </Toolbar>
       </AppBar>
 

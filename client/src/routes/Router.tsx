@@ -31,6 +31,10 @@ import Layout from "../sandbox/mui-sandbox/layout/Layout";
 import LifecycleExe from "../sandbox/life-sicle-hooks/LifecycleExe";
 import MuiContainer from "../sandbox/mui-sandbox/layout/MuiContainer";
 import MuiGrid from "../sandbox/mui-sandbox/layout/MuiGrid";
+import ChildrenTraining from "../sandbox/Children-my-training/ChildrenTraining";
+import Parent from "../sandbox/Children-my-training/Parent";
+import Child from "../sandbox/Children-my-training/Child";
+
 //URL מסתכל על כתובת בשורת ה ROUTS
 const Router = () => {
   return (
@@ -47,6 +51,13 @@ const Router = () => {
       <Route path={ROUTES.SINGUP} element={<SignupPage />} />
       <Route path={ROUTES.LOGIN} element={<LoginPage />} />
       <Route path={ROUTES.SANDBOX} element={<SandboxMenu />}>
+        <Route
+          path={SANDBOX_ROUTES.CHILDRENTRAINING}
+          element={<ChildrenTraining />}
+        >
+          <Route path={SANDBOX_ROUTES.PARENT} element={<Parent />} />
+          <Route path={SANDBOX_ROUTES.CHILD} element={<Child />} />
+        </Route>
         <Route path={SANDBOX_ROUTES.ITERATIONS} element={<Loops />} />
         <Route path={SANDBOX_ROUTES.LIFECYCLEEXE} element={<LifecycleExe />} />
         <Route path={SANDBOX_ROUTES.INTRODUCTION} element={<Babel />}></Route>
